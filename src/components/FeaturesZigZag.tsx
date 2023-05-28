@@ -25,7 +25,7 @@ export default function FeaturesZigZag() {
                     <div className={`font-architects-daughter text-xl text-primaryOrange mb-2 text-right font-medium ${Visby.className}`}>
                         More speed. Less spend
                     </div>
-                    <SecondaryTitle>Organization</SecondaryTitle>
+Imag                    <SecondaryTitle align="right" className="mb-8">Organization</SecondaryTitle>
                     <p className="text-xl text-primaryWhite mb-4 text-right lg:w-9/12 lg:ml-auto font-medium">
                         Proper planning and organization are the foundation for successful project execution and timely
                         delivery of exceptional results.
@@ -75,7 +75,7 @@ export default function FeaturesZigZag() {
                     <div className={`font-architects-daughter text-xl text-primaryOrange mb-2 font-medium ${Visby.className}`}>
                         More speed. Less spend
                     </div>
-                    <SecondaryTitle align="left">Cutting edge technologies</SecondaryTitle>
+                    <SecondaryTitle align="left" className="mb-8">Cutting edge technologies</SecondaryTitle>
                     <p className="text-xl text-primaryWhite mb-4 text-left lg:w-9/12 lg:mr-auto font-medium">
                         By leveraging cutting<span className="font-serif">-</span>edge technologies, we empower businesses to stay ahead of the curve and
                         drive
@@ -137,7 +137,7 @@ export default function FeaturesZigZag() {
                     <div className={`font-architects-daughter text-xl text-primaryOrange mb-2 text-right font-medium ${Visby.className}`}>More speed. Less
                         spend
                     </div>
-                    <SecondaryTitle>Projects</SecondaryTitle>
+                    <SecondaryTitle align="right" className="mb-8">Projects</SecondaryTitle>
                     <p className="text-xl text-primaryWhite mb-4 text-right lg:w-9/12 lg:ml-auto font-medium">
                         From concept to completion, we approach every project with a focus on delivering exceptional
                         results that exceed our clients&apos; expectations.
