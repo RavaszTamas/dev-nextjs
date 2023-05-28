@@ -4,7 +4,7 @@ import ArrowRight from "../assets/images/svg/arrow-right-large.svg"
 import Image from "next/image";
 import TextButton from "@/components/buttons/TextButton";
 import SecondaryHero from "../assets/images/png/secondary-hero-graphics.png"
-import SecondaryTitle from "@/components/SecondaryTitle";
+import SecondaryTitle from "@/components/texts/SecondaryTitle";
 export default function AboutUsTeaser() {
 
 

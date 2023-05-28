@@ -1,6 +1,6 @@
 import React from "react";
 import OutlinedButton from "@/components/buttons/OutlinedButton";
-import SecondaryTitle from "@/components/SecondaryTitle";
+import SecondaryTitle from "@/components/texts/SecondaryTitle";
 import {Visby} from "@/assets/fonts";
 import Image from "next/image";
 import NftGradientPhoto from "../assets/images/png/nft-gradient-photo.png";

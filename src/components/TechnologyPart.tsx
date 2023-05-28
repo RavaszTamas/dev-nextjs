@@ -1,5 +1,5 @@
 import React from "react";
-import SecondaryTitle from "@/components/SecondaryTitle";
+import SecondaryTitle from "@/components/texts/SecondaryTitle";
 import TechCell from "@/components/TechCell";
 
 export default function TechnologyPart(){

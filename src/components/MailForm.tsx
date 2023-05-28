@@ -1,8 +1,8 @@
-import SecondaryTitle from "@/components/SecondaryTitle";
+import SecondaryTitle from "@/components/texts/SecondaryTitle";
 import React from "react";
 import {Visby} from "@/assets/fonts";
 import OutlinedButton from "@/components/buttons/OutlinedButton";
-import "./MailForm.css";
+import "./styles/GradientBorder.css";
 
 export default function MailForm() {
 
@@ -17,7 +17,7 @@ export default function MailForm() {
                     Name
                 </label>
                 <input
-                    className="white-grad shadow appearance-none rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="border-gradient-to-r shadow appearance-none rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     id="name" type="text" placeholder="Jane Doe"/>
             </div>
             <div className="mb-4">
@@ -25,7 +25,7 @@ export default function MailForm() {
                     Email
                 </label>
                 <input
-                    className="white-grad shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="border-gradient-to-r shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     id="email" type="text" placeholder="Jane@domain.com"/>
             </div>
             <div className="mb-4">
@@ -34,7 +34,7 @@ export default function MailForm() {
                 </label>
                 <textarea
                     rows={4}
-                    className="white-grad shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline resize-none"
+                    className="border-gradient-to-r shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline resize-none"
                     id="message" placeholder="Type your query here..."/>
             </div>
             <OutlinedButton type="submit">SEND</OutlinedButton>
