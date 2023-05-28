@@ -12,7 +12,7 @@ export default function Header() {
         <Link href={"/"}><Image className="" src={AqelaLogo} alt={"aqela-logo"}/></Link>
         <div className="flex flex-row items-center justify-between w-1/2">
             <Link href={"/about"}> <TextButton>About us</TextButton></Link>
-            <TextButton>Services</TextButton>
+            <Link href={"/voting-app"}>  <TextButton>Services</TextButton> </Link>
             <TextButton>Contact us</TextButton>
             <Image src={Search} alt={"search"}/>
         </div>

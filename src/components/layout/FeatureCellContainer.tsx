@@ -7,5 +7,5 @@ export default function FeatureCellContainer({featureCells}: { featureCells: { t
             return featureCells.map(item => <FeatureCell key={item.title} title={item.title} text={item.text}/>)
         }, [featureCells]
     )
-    return <div className="grid grid-cols-2 gap-4">{content}</div>
+    return <div className="grid grid-cols-2 gap-4 auto-rows-fr">{content}</div>
 }

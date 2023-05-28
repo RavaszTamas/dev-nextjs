@@ -16,7 +16,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-primaryBlack">
           <Header/>
+          <main className="flex min-h-screen flex-col items-center justify-between relative 2xl:container 2xl:mx-auto">
               {children}
+          </main>
           <Footer/>
       </body>
     </html>

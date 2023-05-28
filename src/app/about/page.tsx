@@ -5,6 +5,9 @@ import HeroImage from "@/components/HeroImage";
 import SubTitleText from "@/components/texts/SubTitleText";
 import FeatureCellContainer from "@/components/layout/FeatureCellContainer";
 import TeamMembers from "@/components/layout/TeamMembers";
+import MainTitle from "@/components/texts/MainTitle";
+import VectorLines from "@/assets/images/svg/lines.svg";
+import Image from "next/image";
 
 const featureCells = [
     {
@@ -19,44 +22,51 @@ const featureCells = [
 export default function About() {
 
 
-    return <main className="flex min-h-screen flex-col items-center justify-between relative 2xl:container 2xl:mx-auto">
-        <div className="w-full flex flex-col gap-8 relative my-[5%]">
-            <HeroImage/>
-            <h1 className={`text-primaryWhite ${NewAlenia.className} uppercase text-9xl text-left w-full font-bold my-36`}>
-                About Us
-            </h1>
-            <SecondaryTitle align="left">OUR STORY</SecondaryTitle>
-            <div className="relative left-[10%] mb-48">
-                <SubTitleText align="left">In 2022, a group of diverse individuals with a shared passion for societal
-                    change and
-                    technological innovation came together to establish Aqela Technologies, LLP. As a Romanian tech
-                    development company, we&apos;re driven by the ambition to become a leading local tech hub and
-                    community
-                    builder. We&apos;ve always been intrigued by highly innovative and, at times, controversial
-                    technologies
-                    like blockchain. Our journey took a significant turn when we won an EU tender at our launch,
-                    confirming the wider interest in our resourceful ideas.</SubTitleText>
-            </div>
-            <FeatureCellContainer featureCells={featureCells}/>
-            <div className="w-full mt-40">
-                <SecondaryTitle className="w-full max-w-full" align="right"> developing a secure and</SecondaryTitle>
-                <SecondaryTitle className="w-full max-w-full mb-28" align="right">user friendly
-                    voting system</SecondaryTitle>
-                <SubTitleText align="left">Our primary goal is to develop a secure and user-friendly voting system that
-                    offers an
-                    alternative to current democratic practices. This system respects personal privacy while allowing
-                    for weighted voting. We aim to increase participation in public decision-making within the EU and
-                    enhance the societal benefits of democratic decisions. We&apos;ve outlined several key milestones to
-                    guide our journey, each marking a significant step towards our ambitious objectives.</SubTitleText>
-            </div>
-            <div className="mb-8">
-                <SecondaryTitle className="max-w-full w-full mt-40 mb-8" align="center">Our team</SecondaryTitle>
-                <SubTitleText className="max-w-full w-3/4 mx-auto" align="center">AQELA is a small but very enthusiastic Romanian company passionate not only about
-                    blockchain-based software solutions, but also about all other cutting edge technologies. Our
-                    software engineers are proficient and passionate and our goal is to achieve visionary things in the
-                    technology and IT industry.</SubTitleText>
-            </div>
-            <TeamMembers/>
+    return <div className="w-full flex flex-col gap-8 relative my-[5%]">
+        <HeroImage/>
+        <MainTitle>
+            About Us
+        </MainTitle>
+        <SecondaryTitle align="left">OUR STORY</SecondaryTitle>
+        <div className="relative left-[10%] mb-48">
+            <SubTitleText align="left">In 2022, a group of diverse individuals with a shared passion for societal
+                change and
+                technological innovation came together to establish Aqela Technologies, LLP. As a Romanian tech
+                development company, we&apos;re driven by the ambition to become a leading local tech hub and
+                community
+                builder. We&apos;ve always been intrigued by highly innovative and, at times, controversial
+                technologies
+                like blockchain. Our journey took a significant turn when we won an EU tender at our launch,
+                confirming the wider interest in our resourceful ideas.</SubTitleText>
         </div>
-    </main>
+        <FeatureCellContainer featureCells={featureCells}/>
+        <div className="w-full mt-40">
+            <SecondaryTitle className="w-full max-w-full" align="right"> developing a secure and
+            </SecondaryTitle>
+            <SecondaryTitle className="w-full max-w-full mb-28 pb-16 relative" align="right">user friendly
+                voting system
+                {/*<div className="absolute w-full">*/}
+                {/*<div className="absolute w-full bottom-0 border-b-4 border-b-primaryPurple ">*/}
+
+                {/*</div>*/}
+                {/*</div>*/}
+                <Image src={VectorLines} alt={"vector-lines"} className="absolute bottom-0 w-full"/>
+            </SecondaryTitle>
+            <SubTitleText align="left">Our primary goal is to develop a secure and user-friendly voting system that
+                offers an
+                alternative to current democratic practices. This system respects personal privacy while allowing
+                for weighted voting. We aim to increase participation in public decision-making within the EU and
+                enhance the societal benefits of democratic decisions. We&apos;ve outlined several key milestones to
+                guide our journey, each marking a significant step towards our ambitious objectives.</SubTitleText>
+        </div>
+        <div className="mb-8">
+            <SecondaryTitle className="max-w-full w-full mt-40 mb-8" align="center">Our team</SecondaryTitle>
+            <SubTitleText className="max-w-full w-3/4 mx-auto" align="center">AQELA is a small but very enthusiastic
+                Romanian company passionate not only about
+                blockchain-based software solutions, but also about all other cutting edge technologies. Our
+                software engineers are proficient and passionate and our goal is to achieve visionary things in the
+                technology and IT industry.</SubTitleText>
+        </div>
+        <TeamMembers/>
+    </div>
 }
