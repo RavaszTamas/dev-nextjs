@@ -8,19 +8,19 @@ import {NewAlenia} from "@/assets/fonts";
 
 const teamMembers = [
     {
-        name: "Juhasz Boylan Pal",
+        name: <>JUHASZ-BOYLAN<br/>PAL</>,
         image: Paolo
     },
     {
-        name: "DEMETER FERENC",
+        name: <>DEMETER <br/> FERENC</>,
         image: Feco
     },
     {
-        name: "ANTAL MATE",
+        name: <>ANTAL <br/> MATE</>,
         image: Matteo
     },
     {
-        name: "RAVASZ TAMAS",
+        name: <> RAVASZ <br/> TAMAS</>,
         image: WellOfCourseIKnowHimItsMe
     },
 ]
@@ -29,7 +29,7 @@ export default function TeamMembers() {
     const members = useMemo(() => {
         return teamMembers.map((item) => <div key={item.name}>
                 <Image src={item.image} alt={`${item.name}`} className="mx-auto"/>
-                <p className={`${NewAlenia.className} text-primaryWhite text-4xl text-center`}>{item.name}</p>
+                <p className={`${NewAlenia.className} text-primaryWhite text-4xl text-center capitalize `}>{item.name}</p>
             </div>
         )
     }, [])

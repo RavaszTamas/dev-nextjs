@@ -5,6 +5,7 @@ import AqelaWhiteLogo from "../assets/images/svg/aqela-logo-white.svg"
 import TextButton from "@/components/buttons/TextButton";
 import FacebookIcon from "../assets/images/svg/facebook.svg";
 import InstagramIcon from "../assets/images/svg/instagram.svg";
+import Link from "next/link";
 
 export default function Footer() {
 
@@ -17,28 +18,26 @@ export default function Footer() {
         <div className="flex flex-row justify-between border-b-2 pb-8 mx-16">
             <Image src={AqelaWhiteLogo} alt={"aqela-white-logo"}/>
             <div className="w-1/2 flex flex-row justify-between mr-8">
-                <div className="grid grid-cols-2 gap-2 justify-start">
+                <div className="grid grid-cols-2 gap-8 gap-x-16 justify-start">
                     <div/>
                     <div/>
-                    <div/>
-                    <div/>
                     <div>
-                        <TextButton>HOME</TextButton>
+                        <Link href="/"><TextButton>HOME</TextButton> </Link>
                     </div>
                     <div>
-                        <TextButton>Blockchain development</TextButton>
+                       <a href="https://anpc.ro/"> <TextButton>ANPC </TextButton> </a>
                     </div>
                     <div>
-                        <TextButton>ABOUT US</TextButton>
+                       <Link href="/about"> <TextButton>ABOUT US</TextButton></Link>
                     </div>
                     <div>
-                        <TextButton>ERP Development</TextButton>
+                        <a href="https://anpc.ro/ce-este-sal/"> <TextButton>ANPC SAL</TextButton> </a>
                     </div>
                     <div>
-                        <TextButton>SERVICES</TextButton>
+                        <Link href="/blockchain-projects"> <TextButton>Blockchain Projects</TextButton> </Link>
                     </div>
                     <div>
-                        <TextButton>Frontend Development</TextButton>
+                        <Link href="/contamy-nation"> <TextButton>ContamyNation</TextButton> </Link>
                     </div>
                 </div>
                 <div className="flex flex-row gap-8 mb-5">
