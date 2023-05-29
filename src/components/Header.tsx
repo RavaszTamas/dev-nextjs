@@ -34,7 +34,7 @@ export default function Header() {
                 style={{padding: 0, fontSize: "18px", fontWeight: 700}}
             >
                 <span className={`text-primaryWhite  ${Visby.className} `}>
-                Dashboard
+                SERVICES
                 </span>
             </Button>
             <Menu

@@ -11,6 +11,7 @@ const ContamyNation = ({}) => {
         <Suspense fallback={`Loading...`}>
             <Head>
                 <title>Contamy Nation</title>
+
             </Head>
             <DynamicMain />
         </Suspense>
