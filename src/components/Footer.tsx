@@ -5,7 +5,6 @@ import AqelaWhiteLogo from "../assets/images/svg/aqela-logo-white.svg"
 import TextButton from "@/components/buttons/TextButton";
 import FacebookIcon from "../assets/images/svg/facebook.svg";
 import InstagramIcon from "../assets/images/svg/instagram.svg";
-import TwitterIcon from "../assets/images/svg/twitter.svg";
 
 export default function Footer() {
 
@@ -40,9 +39,8 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-row gap-8 mb-5">
                     <div className="flex flex-row gap-8 items-end">
-                        <Image src={FacebookIcon} alt={"facebook icon"}/>
-                        <Image src={InstagramIcon} alt={"instagram icon"}/>
-                        <Image src={TwitterIcon} alt={"twitter icon"}/>
+                        <a href="https://www.facebook.com/profile.php?id=100091977457554"> <Image src={FacebookIcon} alt={"facebook icon"}/> </a>
+                        <a href="https://www.instagram.com/aqelatechnologies/"><Image src={InstagramIcon} alt={"instagram icon"}/></a>
                     </div>
                 </div>
             </div>
