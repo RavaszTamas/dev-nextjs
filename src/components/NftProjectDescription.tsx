@@ -4,6 +4,7 @@ import SecondaryTitle from "@/components/texts/SecondaryTitle";
 import {Visby} from "@/assets/fonts";
 import Image from "next/image";
 import NftGradientPhoto from "../assets/images/png/nft-gradient-photo.png";
+import Link from "next/link";
 
 export default function NftProjectDescription() {
     return <div className="flex flex-row pl-20 items-center">
@@ -20,7 +21,7 @@ export default function NftProjectDescription() {
                 className="font-serif">&apos;</span>re actively supporting our cause, with 10<span
                 className="font-serif">%</span> of earnings donated to NGOs fighting against ocean pollution.
             </p>
-            <OutlinedButton>CHECK OUT</OutlinedButton>
+            <Link href={"/contamy-nation"}><OutlinedButton>CHECK OUT</OutlinedButton></Link>
         </div>
         <Image src={NftGradientPhoto} alt={"nft-gradient-photo"} className="w-2/3"/>
 

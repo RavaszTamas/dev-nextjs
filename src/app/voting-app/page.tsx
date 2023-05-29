@@ -7,6 +7,7 @@ import OutlinedButton from "@/components/buttons/OutlinedButton";
 import FeatureCellContainer from "@/components/layout/FeatureCellContainer";
 import BottomGlow from "@/assets/images/png/bottom-glow.png";
 import Image from "next/image";
+import HorizontalZigZagSplitter from "@/components/HorizontalZigZagSplitter/HorizontalZigZagSplitter";
 
 const featureCells = [{
     title: "Easy Voting and Registered Entity",
@@ -30,7 +31,7 @@ export default function VotingApp() {
 
 
     return <div className="flex flex-col gap-8 relative">
-        <Image src={BottomGlow} alt={"bottomglow"} className="absolute bottom-0 left-1/2 -translate-x-1/2" />
+        <Image src={BottomGlow} alt={"bottomglow"} className="absolute bottom-0 left-1/2 -translate-x-1/2 -z-10"/>
         <HeroImage/>
         <MainTitle className="mb-8">
             AQELA Voting
@@ -54,26 +55,35 @@ export default function VotingApp() {
         <SecondaryTitle className="max-w-full w-full my-32" align="center">
             Our Journey and Future Aspirations
         </SecondaryTitle>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-2 gap-12 relative">
             <div>
                 <SecondaryTitle>Done</SecondaryTitle>
                 <SubTitleText>Company Launch - AQELA Technologies took flight on 16.06.2022, marking our first step
                     towards revolutionizing the voting process.</SubTitleText>
+                <div className="absolute w-full -scale-x-100">
+                    <HorizontalZigZagSplitter centerPoint={6} height="h-16"/>
+                </div>
             </div>
             <div/>
             <div/>
             <div>
                 <SecondaryTitle>In Progress</SecondaryTitle>
-                <SubTitleText className="mb-8">Income Stabilization Mechanism - We&apos;re ensuring the systematic and elastic flow of our
+                <SubTitleText className="mb-8">Income Stabilization Mechanism - We&apos;re ensuring the systematic and
+                    elastic flow of our
                     outsourcing projects to maintain stability.</SubTitleText>
                 <SubTitleText>Sustainable Upscaling Mechanism - Our growth strategy is centered on flexibility, allowing
                     us to navigate and thrive in the current tech climate as a micro-enterprise.</SubTitleText>
+                <div className="absolute w-full left-0">
+                    <HorizontalZigZagSplitter centerPoint={6} height="h-16"/>
+                </div>
             </div>
             <div>
                 <SecondaryTitle>Future</SecondaryTitle>
-                <SubTitleText className="mb-8">Product Launch - Launching products that we can claim full ownership of is a key element
+                <SubTitleText className="mb-8">Product Launch - Launching products that we can claim full ownership of
+                    is a key element
                     of our growth strategy.</SubTitleText>
-                <SubTitleText className="mb-32">Aqela Community Center - We&apos;re planning to establish a physical hub where the youth can
+                <SubTitleText className="mb-32">Aqela Community Center - We&apos;re planning to establish a physical hub
+                    where the youth can
                     learn, create, and develop in a modern cyber-environment.</SubTitleText>
             </div>
             <div/>

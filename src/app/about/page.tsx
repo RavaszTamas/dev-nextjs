@@ -8,6 +8,7 @@ import TeamMembers from "@/components/layout/TeamMembers";
 import MainTitle from "@/components/texts/MainTitle";
 import VectorLines from "@/assets/images/svg/lines.svg";
 import Image from "next/image";
+import HorizontalZigZagSplitter from "@/components/HorizontalZigZagSplitter/HorizontalZigZagSplitter";
 
 const featureCells = [
     {
@@ -20,7 +21,6 @@ const featureCells = [
     },
 ]
 export default function About() {
-
 
     return <div className="w-full flex flex-col gap-8 relative my-[5%]">
         <HeroImage/>
@@ -50,7 +50,10 @@ export default function About() {
 
                 {/*</div>*/}
                 {/*</div>*/}
-                <Image src={VectorLines} alt={"vector-lines"} className="absolute bottom-0 w-full"/>
+                {/*<Image src={VectorLines} alt={"vector-lines"} className="absolute bottom-0 w-full"/>*/}
+                <div className="absolute w-full bottom-0">
+                    <HorizontalZigZagSplitter centerPoint={2}/>
+                </div>
             </SecondaryTitle>
             <SubTitleText align="left">Our primary goal is to develop a secure and user-friendly voting system that
                 offers an

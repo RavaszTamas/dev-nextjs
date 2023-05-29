@@ -10,7 +10,7 @@ import TwitterIcon from "../assets/images/svg/twitter.svg";
 
 export default function Footer() {
 
-    return <div className="2xl:container 2xl:mx-auto relative pb-36 relative">
+    return <div id="contact-us" className="2xl:container 2xl:mx-auto relative pb-36 relative">
         <div className="w-full relative">
             <Image src={ContactUsBackground} alt={"contact-us-background"} className="w-full"/>
             <div className="absolute top-1/2 -translate-y-1/2 w-full">

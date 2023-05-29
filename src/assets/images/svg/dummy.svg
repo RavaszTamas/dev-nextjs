@@ -1,10 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg">
-    <defs>
-        <linearGradient id="Gradient" x1="0" y1="0" x2="100%" y2="100%" gradientUnits="userSpaceOnUse">
-            <stop stop-color="%23512A9E" offset="0"/>
-            <stop stop-color="%23F15A08" offset="1"/>
-        </linearGradient>
-    </defs>
-    <rect x="5" y="5" width="100%" height="100%" style="height:calc(100% - 10px);width:calc(100% - 10px)" rx="8" ry="8"
-          stroke-width="1" fill="transparent" stroke="url(%23Gradient)"/>
+<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'>
+    <path d='M1 0 L0 1 L99 100 L100 99' fill='#512A9E'/>
 </svg>
