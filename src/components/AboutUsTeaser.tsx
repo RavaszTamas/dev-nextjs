@@ -5,6 +5,7 @@ import Image from "next/image";
 import TextButton from "@/components/buttons/TextButton";
 import SecondaryHero from "../assets/images/png/secondary-hero-graphics.png"
 import SecondaryTitle from "@/components/texts/SecondaryTitle";
+import Link from "next/link";
 export default function AboutUsTeaser() {
 
 
@@ -28,7 +29,7 @@ export default function AboutUsTeaser() {
         <div className="flex flex-row-reverse items-center gap-4">
             <Image src={ArrowRight} alt={"arrow-right-large"}
                    className="w-6 h-6 relative bottom-[2px]"/>
-            <TextButton color="secondary">ABOUT US</TextButton>
+           <Link href={'/about'}> <TextButton color="secondary">ABOUT US</TextButton> </Link>
 
         </div>
     </div>
