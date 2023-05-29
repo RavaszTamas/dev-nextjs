@@ -3,6 +3,7 @@ import {NewAlenia} from "@/assets/fonts";
 import OutlinedButton from "@/components/buttons/OutlinedButton";
 import HeroImage from "@/components/HeroImage";
 import SubTitleText from "@/components/texts/SubTitleText";
+import Link from "next/link";
 
 export default function Hero() {
 
@@ -29,7 +30,7 @@ export default function Hero() {
             and efficiency for our clients.
         </SubTitleText>
         <div>
-            <OutlinedButton>Find out more</OutlinedButton>
+           <Link href={"/blockchain-projects"}> <OutlinedButton>Find out more</OutlinedButton></Link>
         </div>
 
     </div>
