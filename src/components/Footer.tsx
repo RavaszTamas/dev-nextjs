@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import ContactUsBackground from "../assets/images/png/contact-us-background.png";
 import MailForm from "@/components/MailForm";
 import AqelaWhiteLogo from "../assets/images/svg/aqela-logo-white.svg"
 import TextButton from "@/components/buttons/TextButton";
@@ -12,8 +11,7 @@ export default function Footer() {
 
     return <div id="contact-us" className="2xl:container 2xl:mx-auto relative pb-36 relative">
         <div className="w-full relative">
-            <Image src={ContactUsBackground} alt={"contact-us-background"} className="w-full"/>
-            <div className="absolute top-1/2 -translate-y-1/2 w-full">
+            <div className="w-full bg-contact-us bg-cover bg-center py-20">
                 <MailForm/>
             </div>
         </div>

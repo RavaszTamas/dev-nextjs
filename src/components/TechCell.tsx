@@ -1,7 +1,7 @@
 import React from "react";
 import {NewAlenia} from "@/assets/fonts";
 
-export default function TechCell({number, title}: { number: string; title: string }) {
+export default function TechCell({number, title}: { number: string; title: string | React.ReactNode }) {
 
     return <div className="w-[410px] h-[400px] p-[1px] bg-gradient-to-br from-primaryOrange to-primaryPurple">
         <div className="bg-primaryBlack w-full h-full flex flex-col justify-between p-8">

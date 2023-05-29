@@ -17,6 +17,8 @@ module.exports = {
             },
 
             backgroundImage: {
+                'contact-us' : 'url(/contact-us-background.png)',
+                'artist' : 'url(/artist-bg.png)',
                 'minting' : 'url(/minting-bg.png)',
                 'gardient-background-contact-us' : 'url(/gardient-background.png)',
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -25,5 +27,6 @@ module.exports = {
             },
         },
     },
-    plugins: [],
+    plugins: []
+
 }

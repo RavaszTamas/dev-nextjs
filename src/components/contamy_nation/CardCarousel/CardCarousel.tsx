@@ -12,9 +12,8 @@ import CardCarouseSlide from "./components";
 // import "swiper/modules/autoplay/autoplay.min.css";
 import { Theme, useMediaQuery, useTheme } from "@material-ui/core";
 import { useState } from "react";
-import {styleConstants} from "@/assets/constants/styleConstants";
 import TextTransition, {presets} from "react-text-transition";
-import {Exo} from "@/assets/fonts";
+import { Visby} from "@/assets/fonts";
 
 const fishes = [
   {
@@ -78,14 +77,13 @@ export default function CardCarousel() {
       <div className="relative z-top w-4/5 mx-auto text-white text-center text-sm md:text-3xl font-extrabold">
         <div className="my-16">
           <TextTransition direction="up" springConfig={presets.default}>
-            <span className={`${Exo.className}`}>
+            <span className={`${Visby.className}`}>
                 <span className="uppercase text-4xl font-extrabold text-secondary">
                   {fishes[index % fishes.length].id}
                 </span>
                 <br />
                 In addition to their unique appearance, all our fish have their own
                 unique features and characteristics.
-                <br />
                 {fishes[index % fishes.length].description}
               </span>
           </TextTransition>

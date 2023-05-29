@@ -3,92 +3,92 @@ import localFont from 'next/font/local';
 export const Visby = localFont({
     src: [
         {
-            path: "./visby/Fontspring-DEMO-visbycf-heavy.otf",
+            path: "./visby/VisbyCF-Heavy.woff",
             weight: "900",
             style: "normal"
         },
         {
-            path: "./visby/Fontspring-DEMO-visbycf-heavyoblique.otf",
+            path: "./visby/VisbyCF-HeavyOblique.woff",
             weight: "900",
             style: "italic"
         },
         {
-            path: "./visby/Fontspring-DEMO-visbycf-extrabold.otf",
+            path: "./visby/VisbyCF-Extrabold.woff",
             weight: "800",
             style: "normal"
         },
         {
-            path: "./visby/Fontspring-DEMO-visbycf-extraboldoblique.otf",
+            path: "./visby/VisbyCF-ExtraboldOblique.woff",
             weight: "800",
             style: "italic"
         },
         {
-            path: "./visby/Fontspring-DEMO-visbycf-bold.otf",
+            path: "./visby/VisbyCF-Bold.woff",
             weight: "700",
             style: "normal"
         },
         {
-            path: "./visby/Fontspring-DEMO-visbycf-boldoblique.otf",
+            path: "./visby/VisbyCF-BoldOblique.woff",
             weight: "700",
             style: "italic"
         },
         {
-            path: "./visby/Fontspring-DEMO-visbycf-demibold.otf",
+            path: "./visby/VisbyCF-Demibold.woff",
             weight: "600",
             style: "normal"
         },
         {
-            path: "./visby/Fontspring-DEMO-visbycf-demiboldoblique.otf",
+            path: "./visby/VisbyCF-DemiboldOblique.woff",
             weight: "600",
             style: "italic"
         },
         {
-            path: "./visby/Fontspring-DEMO-visbycf-medium.otf",
+            path: "./visby/VisbyCF-Medium.woff",
             weight: "500",
             style: "normal"
         },
         {
-            path: "./visby/Fontspring-DEMO-visbycf-mediumoblique.otf",
+            path: "./visby/VisbyCF-MediumOblique.woff",
             weight: "500",
             style: "italic"
         },
         {
-            path: "./visby/Fontspring-DEMO-visbycf-medium.otf",
+            path: "./visby/VisbyCF-Medium.woff",
             weight: "500",
             style: "normal"
         },
         {
-            path: "./visby/Fontspring-DEMO-visbycf-mediumoblique.otf",
+            path: "./visby/VisbyCF-MediumOblique.woff",
             weight: "500",
             style: "italic"
         },
         {
-            path: "./visby/Fontspring-DEMO-visbycf-regular.otf",
+            path: "./visby/VisbyCF-Regular.woff",
             weight: "400",
             style: "normal"
         },
         {
-            path: "./visby/Fontspring-DEMO-visbycf-regularoblique.otf",
+            path: "./visby/VisbyCF-RegularOblique.woff",
             weight: "400",
             style: "italic"
         },
         {
-            path: "./visby/Fontspring-DEMO-visbycf-light.otf",
+            path: "./visby/VisbyCF-Light.woff",
             weight: "300",
             style: "normal"
         },
         {
-            path: "./visby/Fontspring-DEMO-visbycf-lightoblique.otf",
+            path: "./visby/VisbyCF-LightOblique.woff",
             weight: "300",
             style: "italic"
         },
         {
-            path: "./visby/Fontspring-DEMO-visbycf-thin.otf",
+            path: "./visby/VisbyCF-Thin.woff",
             weight: "100",
             style: "normal"
         },
         {
-            path: "./visby/Fontspring-DEMO-visbycf-thinoblique.otf",
+            path: "./visby/VisbyCF-ThinOblique.woff",
             weight: "100",
             style: "italic"
         },

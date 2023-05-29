@@ -22,7 +22,7 @@ import {
     MathWalletAdapter
 } from "@solana/wallet-adapter-wallets";
 import {rpcHost, candyMachineId, network} from "@/components/contamy_nation/config";
-import {alpha, createTheme, ThemeProvider} from "@material-ui/core";
+import { createTheme, ThemeProvider} from "@material-ui/core";
 import SecondaryTitle from "@/components/texts/SecondaryTitle";
 import {Exo, Visby} from "@/assets/fonts";
 import HorizontalZigZagSplitter from "@/components/HorizontalZigZagSplitter/HorizontalZigZagSplitter";
@@ -30,45 +30,80 @@ import CardCarousel from "@/components/contamy_nation/CardCarousel";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import InstagramIcon from "@/components/InstagramIcon";
+import Button from "@material-ui/core/Button";
+import Roadmap from "@/components/Roadmap";
 
 export function ContamyNationApp() {
 
-    return <div className="w-full flex flex-col gap-8 relative my-[5%]">
+    return <div className="w-full flex flex-col gap-8 relative mt-[5%]">
         <HeroImage/>
         <MainTitle className="mb-8">
             Contamy
             <br/>
             Nation
         </MainTitle>
-        <SubTitleText>Dive into the depths of the Polluted Shoal with Contamy-Nation, a unique NFT collection on the
+        <SubTitleText>Dive into the depths of the Polluted Shoal with Contamy<span className="font-serif">-</span>Nation,
+            a unique NFT collection on the
             Solana blockchain. We&apos;ve crafted this collection inspired by the mythical sea creatures of the fallout
             zone,
             revealing the harsh reality of their survival and mutation amidst rampant pollution. Explore this strange
             world of odd creatures and unique flora—it&apos;s not science fiction, it&apos;s our reality.</SubTitleText>
-        <div className="mb-60">
+        <section className="mb-60">
             <OutlinedButton>FIND OUT MORE</OutlinedButton>
-        </div>
-        <div className="mt-32 bg-minting flex flex-col justify-center min-h-[400px] bg-center bg-cover items-center">
+        </section>
+        <section
+            className="mt-32 bg-minting flex flex-col justify-center min-h-[400px] bg-center bg-cover items-center">
             <SecondaryTitle>BE PART OF THE CHANGE</SecondaryTitle>
             <MintZone candyMachineId={candyMachineId}/>
-        </div>
-        <div className="w-full">
-            <SecondaryTitle align="right" className="relative w-full max-w-full">Join us in making <br/> a difference.
+        </section>
+        <section className="w-full">
+            <SecondaryTitle align="right" className="relative w-full max-w-full mb-16 xl:mb-8">Join us in making <br/> a difference.
                 <div className="absolute w-9/12 -bottom-[20px] right-0">
                     <HorizontalZigZagSplitter height={"h-12"} centerPoint={{left: 0, center: 1, right: 6}}
                                               className="justify-end"/>
                 </div>
             </SecondaryTitle>
-            <SubTitleText>With every Contamy-Nation NFT purchase, you aren&apos;t just owning a piece of art;
+            <SubTitleText>With every Contamy<span className="font-serif">-</span>Nation NFT purchase, you aren&apos;t
+                just owning a piece of art;
                 you&apos;re taking a
-                stand against ocean pollution. We&apos;re committed to donating 10% of our earnings to NGOs fighting for
-                cleaner oceans. By having a Contamy-Nation NFT in your wallet, you&apos;re actively showing your support
+                stand against ocean pollution. W<span className="font-serif">e&apos;</span>re committed to donating
+                10<span className="font-serif">%</span>
+                of our earnings to NGOs fighting for
+                cleaner oceans. By having a Contamy<span className="font-serif">-</span>Nation NFT in your wallet,
+                you&apos;re actively showing your support
                 for
                 a cleaner, more sustainable future.</SubTitleText>
-        </div>
-        <div>
+        </section>
+        <section>
             <CardCarousel/>
-        </div>
+        </section>
+        <section className="bg-artist bg-center bg-cover flex flex-col gap-8 p-16">
+            <SecondaryTitle align="center" className="max-w-full w-full">The Artist</SecondaryTitle>
+            <SubTitleText align="center" className="max-w-full w-7/12 mx-auto">Kiora is the wonderful artist we had the
+                pleasure to work with. She is always full of creative
+                and ground<span className="font-serif">-</span>breaking ideas, and her enthusiasm for our project is
+                immeasurable. If you like the design of
+                our Contamy<span className="font-serif">-</span>nation sea critters, be sure to check out her Instagram
+                page, and support her on Patreon,
+                because this is just the tip of the iceberg <span className="font-serif">-</span> she is working on
+                many, many more interesting
+                projects!</SubTitleText>
+            <div className="mx-auto">
+                <a href={"https://www.instagram.com/_kiora_2.0_/"}>
+                    <Button className="cursor-pointer">
+                        <InstagramIcon/>
+                        <label className={`${Visby.className} text-primaryWhite cursor-pointer ml-2`}><span
+                            className="font-serif">_</span>KIORA<span className="font-serif">_</span>2.0<span
+                            className="font-serif">_</span></label>
+                    </Button>
+                </a>
+
+            </div>
+        </section>
+        <section>
+            <Roadmap/>
+        </section>
     </div>
 }
 
