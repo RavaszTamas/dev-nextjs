@@ -5,8 +5,9 @@ export class MintCounterBorsh implements MintCounterArgs {
   count: number;
   constructor(args: MintCounterArgs) {
     Object.assign(this, args);
+    this.count = 0;
   }
-  static schema = new Map([
+  static schema:any = new Map([
     [
       MintCounterBorsh,
       {

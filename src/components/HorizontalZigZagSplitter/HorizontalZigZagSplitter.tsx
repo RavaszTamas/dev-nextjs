@@ -13,7 +13,6 @@ export default function HorizontalZigZagSplitter({centerPoint = 2, height, class
             _val = centerPoint;
         }
         const value = 13 - _val - 1;
-        console.log(value, _val)
         return {
             left: 13 - value - 1,
             center: 1,

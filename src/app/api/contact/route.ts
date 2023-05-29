@@ -1,6 +1,6 @@
 import sendgrid from "@sendgrid/mail";
 
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
+sendgrid.setApiKey(process.env.SENDGRID_API_KEY || "");
 
 import {NextResponse} from 'next/server';
 

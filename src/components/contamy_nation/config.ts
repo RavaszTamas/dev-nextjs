@@ -8,7 +8,7 @@ export const rpcHost =
     process.env.NEXT_PUBLIC_RPC_HOST || clusterApiUrl(network);
 
 export const candyMachineId = new PublicKey(
-    process.env.NEXT_PUBLIC_CANDY_MACHINE_ID
+    process.env.NEXT_PUBLIC_CANDY_MACHINE_ID || ""
 );
 export const defaultGuardGroup =
     process.env.NEXT_PUBLIC_DEFAULT_GUARD_GROUP || undefined; // undefined means default
