@@ -13,12 +13,12 @@ export const Visby = localFont({
             style: "italic"
         },
         {
-            path: "./visby/VisbyCF-Extrabold.woff",
+            path: "./visby/VisbyCF-ExtraBold.woff",
             weight: "800",
             style: "normal"
         },
         {
-            path: "./visby/VisbyCF-ExtraboldOblique.woff",
+            path: "./visby/VisbyCF-ExtraBoldOblique.woff",
             weight: "800",
             style: "italic"
         },
@@ -33,12 +33,12 @@ export const Visby = localFont({
             style: "italic"
         },
         {
-            path: "./visby/VisbyCF-Demibold.woff",
+            path: "./visby/VisbyCF-DemiBold.woff",
             weight: "600",
             style: "normal"
         },
         {
-            path: "./visby/VisbyCF-DemiboldOblique.woff",
+            path: "./visby/VisbyCF-DemiBoldOblique.woff",
             weight: "600",
             style: "italic"
         },
