@@ -18,6 +18,10 @@ export default function Footer() {
             <Image src={AqelaWhiteLogo} alt={"aqela-white-logo"}/>
             <div className="w-1/2 flex flex-row justify-between mr-8">
                 <div className="grid grid-cols-2 gap-2 justify-start">
+                    <div/>
+                    <div/>
+                    <div/>
+                    <div/>
                     <div>
                         <TextButton>HOME</TextButton>
                     </div>
