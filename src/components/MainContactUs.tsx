@@ -13,7 +13,7 @@ export default function MainContactUs() {
                 experience,
                 our versatile product provides unlimited solutions tailored to your unique needs.
             </p>
-            <OutlinedButton variant="transparent">CONTACT US</OutlinedButton>
+            <a href={"#contact-us"}> <OutlinedButton variant="transparent">CONTACT US</OutlinedButton> </a>
         </div>
     </div>
 }
