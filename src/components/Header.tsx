@@ -24,7 +24,6 @@ export default function Header() {
         <Link href={"/"}><Image className="" src={AqelaLogo} alt={"aqela-logo"}/></Link>
         <div className="flex flex-row items-center justify-between w-1/2">
             <Link href={"/about"}> <TextButton>About us</TextButton></Link>
-            <Link href={"/blockchain-projects"}> <TextButton>Services</TextButton> </Link>
             <Button
                 id="basic-button"
                 aria-controls={open ? 'basic-menu' : undefined}
