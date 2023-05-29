@@ -5,6 +5,9 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: 'Aqela Technologies',
   description: 'Aqela Technologies Website',
+    icons: {
+        icon: '/aqela.ico',
+    },
 }
 
 export default function RootLayout({
