@@ -3,7 +3,6 @@ import MainTitle from "@/components/texts/MainTitle";
 import React from "react";
 import SecondaryTitle from "@/components/texts/SecondaryTitle";
 import SubTitleText from "@/components/texts/SubTitleText";
-import OutlinedButton from "@/components/buttons/OutlinedButton";
 import FeatureCellContainer from "@/components/layout/FeatureCellContainer";
 import BottomGlow from "@/assets/images/png/bottom-glow.png";
 import Image from "next/image";
@@ -40,16 +39,13 @@ export default function VotingApp() {
         <SecondaryTitle className="max-w-full w-full" align="left">
             Democratizing Decision Making
         </SecondaryTitle>
-        <SubTitleText className="max-w-full w-[60%]" align="left">At AQELA, we believe that all voices matter.
+        <SubTitleText className="max-w-full w-[60%] mb-32" align="left">At AQELA, we believe that all voices matter.
             That&apos;s why we&apos;ve developed our groundbreaking Voting
             Application - a tool designed to ensure fair, equitable and customizable voting for a variety of use-cases.
             Whether it&apos;s a company decision where votes are weighted differently or local events that require
             socio-economic considerations, our application is built to adapt to your needs. We&apos;re not just
             innovating;
             we&apos;re redefining what it means to have your say.</SubTitleText>
-        <div className="mb-32">
-            <OutlinedButton>Find out more</OutlinedButton>
-        </div>
         <SecondaryTitle>Features</SecondaryTitle>
         <FeatureCellContainer featureCells={featureCells}/>
         <SecondaryTitle className="max-w-full w-full my-32" align="center">

@@ -3,7 +3,6 @@ import HeroImage from "@/components/HeroImage";
 import React, {useMemo} from "react";
 import MainTitle from "@/components/texts/MainTitle";
 import SubTitleText from "@/components/texts/SubTitleText";
-import OutlinedButton from "@/components/buttons/OutlinedButton";
 import {AppInitializer, MintZone} from "@/components/contamy_nation";
 import {ConnectionProvider, WalletProvider} from "@solana/wallet-adapter-react";
 import {WalletModalProvider} from "@solana/wallet-adapter-react-ui";
@@ -43,7 +42,7 @@ export function ContamyNationApp() {
             <br/>
             Nation
         </MainTitle>
-        <SubTitleText>Walking amongst our once beautiful forests, rivers and the skeletal concrete remnants of the great
+        <SubTitleText className="mb-60">Walking amongst our once beautiful forests, rivers and the skeletal concrete remnants of the great
             outdoors, it feels almost post-apocalyptic. As all living things on Earth, fishes and other sea-creatures
             are also capable of surviving and adapting. But what mutations did the radiation cause in their bodies? How
             have they evolved over the last few decades as humanity has done nothing but continue to pollute and destroy
@@ -51,9 +50,6 @@ export function ContamyNationApp() {
             in the water? We want to bring awareness to the pollution of the oceans by creating these sea creatures that
             are (and will be) doomed due to humanity&apos;s irresponsible and inconsiderate behavior.
         </SubTitleText>
-        <section className="mb-60">
-            <OutlinedButton>FIND OUT MORE</OutlinedButton>
-        </section>
         <section
             className="mt-32 bg-minting flex flex-col justify-center min-h-[400px] bg-center bg-cover items-center">
             <SecondaryTitle>BE PART OF THE CHANGE</SecondaryTitle>
