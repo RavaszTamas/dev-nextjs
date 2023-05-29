@@ -52,6 +52,6 @@ export default function Footer() {
                 <p>Privacy</p>
             </div>
         </div>
-        <div className="bg-gradient-to-t from-primaryBlack to-transparent w-full h-1/3 absolute bottom-0"/>
+        <div className="bg-gradient-to-t from-primaryBlack to-transparent w-full h-1/3 absolute bottom-0 pointer-events-none"/>
     </div>
 }
