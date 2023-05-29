@@ -22,7 +22,7 @@ import {
     MathWalletAdapter
 } from "@solana/wallet-adapter-wallets";
 import {rpcHost, candyMachineId, network} from "@/components/contamy_nation/config";
-import { createTheme, ThemeProvider} from "@material-ui/core";
+import {createTheme, ThemeProvider} from "@material-ui/core";
 import SecondaryTitle from "@/components/texts/SecondaryTitle";
 import {Exo, Visby} from "@/assets/fonts";
 import HorizontalZigZagSplitter from "@/components/HorizontalZigZagSplitter/HorizontalZigZagSplitter";
@@ -43,12 +43,14 @@ export function ContamyNationApp() {
             <br/>
             Nation
         </MainTitle>
-        <SubTitleText>Dive into the depths of the Polluted Shoal with Contamy<span className="font-serif">-</span>Nation,
-            a unique NFT collection on the
-            Solana blockchain. We&apos;ve crafted this collection inspired by the mythical sea creatures of the fallout
-            zone,
-            revealing the harsh reality of their survival and mutation amidst rampant pollution. Explore this strange
-            world of odd creatures and unique flora—it&apos;s not science fiction, it&apos;s our reality.</SubTitleText>
+        <SubTitleText>Walking amongst our once beautiful forests, rivers and the skeletal concrete remnants of the great
+            outdoors, it feels almost post-apocalyptic. As all living things on Earth, fishes and other sea-creatures
+            are also capable of surviving and adapting. But what mutations did the radiation cause in their bodies? How
+            have they evolved over the last few decades as humanity has done nothing but continue to pollute and destroy
+            their natural habitat? What exactly was the biological response of these organisms to the toxic pollutants
+            in the water? We want to bring awareness to the pollution of the oceans by creating these sea creatures that
+            are (and will be) doomed due to humanity&apos;s irresponsible and inconsiderate behavior.
+        </SubTitleText>
         <section className="mb-60">
             <OutlinedButton>FIND OUT MORE</OutlinedButton>
         </section>
@@ -58,7 +60,8 @@ export function ContamyNationApp() {
             <MintZone candyMachineId={candyMachineId}/>
         </section>
         <section className="w-full">
-            <SecondaryTitle align="right" className="relative w-full max-w-full mb-16 xl:mb-8">Join us in making <br/> a difference.
+            <SecondaryTitle align="right" className="relative w-full max-w-full mb-16 xl:mb-8">Join us in making <br/> a
+                difference.
                 <div className="absolute w-9/12 -bottom-[20px] right-0">
                     <HorizontalZigZagSplitter height={"h-12"} centerPoint={{left: 0, center: 1, right: 6}}
                                               className="justify-end"/>
