@@ -12,7 +12,7 @@ export default function OutlinedButton({
     return <button
         type={type}
         disabled={disabled}
-        className={`${variant === "filled" ? "bg-primaryPurple" : "bg-transparent"} text-primaryWhite text-xl py-[18px] px-14 ${Visby.className} font-bold leading-7 ${variant === "filled" ? "border-0" : "border-[1px] border-primaryWhite"}`}>
+        className={`${variant === "filled" ? "bg-primaryPurple" : "bg-transparent"} text-primaryWhite text-xl py-[18px] px-14 ${Visby.className} font-bold leading-7 ${variant === "filled" ? "border-0" : "border-[1px] border-primaryWhite"} hover:bg-primaryDarkPurple hover:border-primaryDarkPurple transition-all`}>
         {children}
     </button>
 

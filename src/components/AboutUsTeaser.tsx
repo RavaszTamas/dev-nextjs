@@ -26,7 +26,7 @@ export default function AboutUsTeaser() {
                 className="font-serif">&apos;</span> needs.
             </p>
         </div>
-        <div className="flex flex-row-reverse items-center gap-4">
+        <div className="flex flex-row-reverse items-center">
             <Image src={ArrowRight} alt={"arrow-right-large"}
                    className="w-6 h-6 relative bottom-[2px]"/>
            <Link href={'/about'}> <TextButton color="secondary">ABOUT US</TextButton> </Link>

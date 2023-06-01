@@ -29,7 +29,7 @@ const featureCells = [{
 export default function VotingApp() {
 
 
-    return <div className="flex flex-col gap-8 relative">
+    return <div className="flex flex-col gap-8 relative px-20">
         <Image src={BottomGlow} alt={"bottomglow"} className="absolute bottom-0 left-1/2 -translate-x-1/2 -z-10"/>
         <HeroImage/>
         <MainTitle className="mb-8">

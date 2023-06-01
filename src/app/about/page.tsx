@@ -1,4 +1,3 @@
-import {NewAlenia} from "@/assets/fonts";
 import React from "react";
 import SecondaryTitle from "@/components/texts/SecondaryTitle";
 import HeroImage from "@/components/HeroImage";
@@ -6,8 +5,6 @@ import SubTitleText from "@/components/texts/SubTitleText";
 import FeatureCellContainer from "@/components/layout/FeatureCellContainer";
 import TeamMembers from "@/components/layout/TeamMembers";
 import MainTitle from "@/components/texts/MainTitle";
-import VectorLines from "@/assets/images/svg/lines.svg";
-import Image from "next/image";
 import HorizontalZigZagSplitter from "@/components/HorizontalZigZagSplitter/HorizontalZigZagSplitter";
 
 const featureCells = [
@@ -22,7 +19,7 @@ const featureCells = [
 ]
 export default function About() {
 
-    return <div className="w-full flex flex-col gap-8 relative my-[5%]">
+    return <div className="w-full flex flex-col gap-8 relative my-[5%] px-20">
         <HeroImage/>
         <MainTitle>
             About Us

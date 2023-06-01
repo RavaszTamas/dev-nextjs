@@ -21,9 +21,8 @@ import {
     MathWalletAdapter
 } from "@solana/wallet-adapter-wallets";
 import {rpcHost, candyMachineId, network} from "@/components/contamy_nation/config";
-import {createTheme, ThemeProvider} from "@material-ui/core";
 import SecondaryTitle from "@/components/texts/SecondaryTitle";
-import {Exo, Visby} from "@/assets/fonts";
+import { Visby} from "@/assets/fonts";
 import HorizontalZigZagSplitter from "@/components/HorizontalZigZagSplitter/HorizontalZigZagSplitter";
 import CardCarousel from "@/components/contamy_nation/CardCarousel";
 import 'swiper/css';
@@ -35,14 +34,15 @@ import Roadmap from "@/components/Roadmap";
 
 export function ContamyNationApp() {
 
-    return <div className="w-full flex flex-col gap-8 relative mt-[5%]">
+    return <div className="w-full flex flex-col gap-8 relative mt-[5%] px-20">
         <HeroImage/>
         <MainTitle className="mb-8">
             Contamy
             <br/>
             Nation
         </MainTitle>
-        <SubTitleText className="mb-60">Walking amongst our once beautiful forests, rivers and the skeletal concrete remnants of the great
+        <SubTitleText className="mb-60">Walking amongst our once beautiful forests, rivers and the skeletal concrete
+            remnants of the great
             outdoors, it feels almost post-apocalyptic. As all living things on Earth, fishes and other sea-creatures
             are also capable of surviving and adapting. But what mutations did the radiation cause in their bodies? How
             have they evolved over the last few decades as humanity has done nothing but continue to pollute and destroy
@@ -106,42 +106,6 @@ export function ContamyNationApp() {
     </div>
 }
 
-const theme = createTheme({
-    palette: {
-        type: "dark",
-        secondary: {
-            main: "#FFF",
-        },
-    },
-    typography: {
-        fontFamily: `${Exo.style.fontFamily}`,
-    },
-    overrides: {
-        MuiButtonBase: {
-            root: {
-                justifyContent: "flex-start",
-            },
-        },
-        MuiButton: {
-            root: {
-                textTransform: undefined,
-                padding: "12px 16px",
-            },
-            startIcon: {
-                marginRight: 8,
-            },
-            endIcon: {
-                marginLeft: 8,
-            },
-            contained: {
-                backgroundColor: "#512A9E",
-                "&:hover": {
-                    backgroundColor: "#745F9E",
-                }
-            }
-        },
-    },
-});
 
 export default function ContamyNationWrapper() {
 
@@ -170,14 +134,12 @@ export default function ContamyNationWrapper() {
     );
 
     return <AppInitializer>
-        <ThemeProvider theme={theme}>
-            <ConnectionProvider endpoint={endpoint}>
-                <WalletProvider wallets={wallets} autoConnect={true}>
-                    <WalletModalProvider>
-                        <ContamyNationApp/>
-                    </WalletModalProvider>
-                </WalletProvider>
-            </ConnectionProvider>
-        </ThemeProvider>
+        <ConnectionProvider endpoint={endpoint}>
+            <WalletProvider wallets={wallets} autoConnect={true}>
+                <WalletModalProvider>
+                    <ContamyNationApp/>
+                </WalletModalProvider>
+            </WalletProvider>
+        </ConnectionProvider>
     </AppInitializer>
 }

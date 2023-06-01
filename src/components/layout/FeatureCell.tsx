@@ -5,7 +5,7 @@ import '../styles/GradientBorder.css';
 export default function FeatureCell({title, text}: { title: string, text: string }) {
 
     return <div
-        className="border-gradient-square-to-br bg-gradient-to-br from-primaryOrange to-primaryPurple flex flex-col justify-center">
+        className="border-gradient-square-to-br flex flex-col justify-center hover:bg-gradient-to-br hover:from-primaryOrange hover:to-primaryPurple">
         <div className="w-full mt-14 mb-8">
             <SecondaryTitle align="center">{title}</SecondaryTitle>
         </div>
