@@ -53,6 +53,11 @@ export default function MailForm() {
                 console.log(error);
                 return;
             }
+            else {
+                setEmail("")
+                setMessage("")
+                setFullname("")
+            }
             console.log(fullname, email, message);
             setSending(false)
         }
