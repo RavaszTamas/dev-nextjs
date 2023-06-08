@@ -8,7 +8,7 @@ interface ElementWithChild {
     children: React.ReactNode;
 }
 const TypographySecondaryLightArticle = ({children}: ElementWithChild) => (
-    <Typography className="text-primaryWhite" color="primary" component="article">
+    <Typography className="text-primaryWhite" color="primary" component="article" style={{color:"white"}}>
         {children}
     </Typography>
 );
