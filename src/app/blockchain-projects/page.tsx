@@ -68,7 +68,7 @@ export default function VotingApp() {
               revolutionizing the voting process.
             </SubTitleText>
             <div className="absolute w-full -scale-x-100">
-              <HorizontalZigZagSplitter centerPoint={6} className="h-8 md:h-16" />
+              <HorizontalZigZagSplitter centerPoint={6} className="mt-4 h-8 md:mt-0 md:h-16" />
             </div>
           </div>
           <div className="hidden md:block" />
@@ -84,7 +84,7 @@ export default function VotingApp() {
               and thrive in the current tech climate as a micro-enterprise.
             </SubTitleText>
             <div className="absolute left-0 w-full">
-              <HorizontalZigZagSplitter centerPoint={6} className="h-8 md:h-16" />
+              <HorizontalZigZagSplitter centerPoint={6} className="mt-4 h-8 md:mt-0 md:h-16" />
             </div>
           </div>
           <div>
