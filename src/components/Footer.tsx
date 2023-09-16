@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="mx-6 flex flex-col gap-8 border-b-2 pb-8 md:mx-8 md:flex-row md:justify-between md:gap-0">
         <Image src={AqelaWhiteLogo} alt={"aqela-white-logo"} />
         <div className="flex w-full flex-col justify-between md:mr-8 md:w-2/3 md:flex-row lg:w-1/2">
-          <div className="grid grid-cols-2 justify-start gap-x-1 gap-y-2 md:gap-8 md:gap-x-16 md:gap-y-12">
+          <div className="grid grid-cols-2 justify-start gap-x-1 gap-y-2 md:gap-8 md:gap-x-16 md:gap-y-6">
             <div>
               <Link href="/">
                 <Button className="p-0" variant="ghost">
