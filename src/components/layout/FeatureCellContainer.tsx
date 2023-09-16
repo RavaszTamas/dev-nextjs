@@ -5,5 +5,5 @@ export default function FeatureCellContainer({ featureCells }: { featureCells: {
   const content = useMemo(() => {
     return featureCells.map((item) => <FeatureCell key={item.title} title={item.title} text={item.text} />);
   }, [featureCells]);
-  return <div className="grid auto-rows-fr grid-cols-1 gap-4 px-3 md:grid-cols-2">{content}</div>;
+  return <div className="grid auto-rows-fr grid-cols-1 gap-4 md:grid-cols-2">{content}</div>;
 }
