@@ -263,7 +263,7 @@ const MintZoneContent = (props: MintZoneContentProps) => {
   return (
     <Grid className="relative" container direction="row">
       <Grid item xs={false} sm={3} />
-      <Grid item xs={9} sm={6} className="relative">
+      <Grid item xs={!wallet?.publicKey ? 12 : 9} sm={6} className="relative">
         <section className="z-top">
           <Box className="relative flex h-full flex-col justify-center">
             <Paper
@@ -280,20 +280,6 @@ const MintZoneContent = (props: MintZoneContentProps) => {
               elevation={0}
             >
               <>
-                {/*<Header>*/}
-                {/*    <WalletContainer>*/}
-                {/*        <Wallet>*/}
-                {/*            {wallet ? (*/}
-                {/*                <WalletAmount>*/}
-                {/*                    {(balance || 0).toLocaleString()} SOL*/}
-                {/*                    <ConnectButton/>*/}
-                {/*                </WalletAmount>*/}
-                {/*            ) : (*/}
-                {/*                <ConnectButton>Connect Wallet</ConnectButton>*/}
-                {/*            )}*/}
-                {/*        </Wallet>*/}
-                {/*    </WalletContainer>*/}
-                {/*</Header>*/}
                 {guardStates.isStarted && wallet?.publicKey && (
                   <Typography
                     variant={matches ? "h6" : "h5"}
