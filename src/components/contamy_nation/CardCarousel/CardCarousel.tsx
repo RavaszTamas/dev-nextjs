@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper";
 import fish1 from "@/assets/images/fishes/1.jpg";
@@ -12,8 +12,7 @@ import CardCarouseSlide from "./components";
 // import "swiper/modules/autoplay/autoplay.min.css";
 import { Theme, useMediaQuery, useTheme } from "@material-ui/core";
 import { useState } from "react";
-import TextTransition, {presets} from "react-text-transition";
-import { Visby} from "@/assets/fonts";
+import TextTransition, { presets } from "react-text-transition";
 
 const fishes = [
   {
@@ -49,8 +48,8 @@ export default function CardCarousel() {
 
   return (
     <section id="cards" className="relative">
-      <div id="swiper" className="w-full relative">
-        <div id="carousel-wrapper" className="relative w-full mx-auto z-top">
+      <div id="swiper" className="relative w-full">
+        <div id="carousel-wrapper" className="z-top relative mx-auto w-full">
           <Swiper
             modules={[Navigation, Autoplay]}
             spaceBetween={50}
@@ -64,32 +63,27 @@ export default function CardCarousel() {
             {fishes.map((image) => {
               return (
                 <SwiperSlide key={image.id}>
-                  <CardCarouseSlide
-                    imageSrc={image.img}
-                    imageAlt={`${image.img}`}
-                  />
+                  <CardCarouseSlide imageSrc={image.img} imageAlt={`${image.img}`} />
                 </SwiperSlide>
               );
             })}
           </Swiper>
         </div>
       </div>
-      <div className="relative z-top w-4/5 mx-auto text-white text-center text-sm md:text-3xl font-extrabold">
+      <div className="z-top relative mx-auto w-4/5 text-center text-sm font-extrabold text-white md:text-3xl">
         <div className="my-16">
           <TextTransition direction="up" springConfig={presets.default}>
-            <span className={`${Visby.className}`}>
-                <span className="uppercase text-4xl font-extrabold text-secondary">
-                  {fishes[index % fishes.length].id}
-                </span>
-                <br />
-                In addition to their unique appearance, all our fish have their own
-                unique features and characteristics.
-                {fishes[index % fishes.length].description}
+            <span className={`font-visby`}>
+              <span className="text-4xl font-extrabold uppercase text-secondary">
+                {fishes[index % fishes.length].id}
               </span>
+              <br />
+              In addition to their unique appearance, all our fish have their own unique features and characteristics.
+              {fishes[index % fishes.length].description}
+            </span>
           </TextTransition>
         </div>
       </div>
-
     </section>
   );
 }

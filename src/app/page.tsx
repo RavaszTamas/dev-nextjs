@@ -7,14 +7,14 @@ import MainContactUs from "@/components/MainContactUs";
 import FeaturesZigZag from "@/components/FeaturesZigZag";
 
 export default function Home() {
-    return (
-        <>
-            <Hero/>
-            <AboutUsTeaser/>
-            <TechnologyPart/>
-            <NftProjectDescription/>
-            <MainContactUs/>
-            <FeaturesZigZag/>
-        </>
-    )
+  return (
+    <>
+      <Hero />
+      <AboutUsTeaser />
+      <TechnologyPart />
+      <NftProjectDescription />
+      <MainContactUs />
+      <FeaturesZigZag />
+    </>
+  );
 }

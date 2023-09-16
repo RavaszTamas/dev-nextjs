@@ -1,23 +1,22 @@
-'use client';
-import React, {useMemo} from "react";
-import {Visby} from "@/assets/fonts";
+import React, { useMemo } from "react";
 
+export default function TextButton({
+  children,
+  color = "primary",
+}: {
+  children: string;
+  color?: "primary" | "secondary" | "black";
+}) {
+  const classname = useMemo(() => {
+    if (color === "primary") {
+      return `leading-6 font-bold font-visby text-primary`;
+    } else if (color === "secondary") {
+      return `leading-[32px] inline-flex items-center font-bold font-visby text-primary-orange`;
+    } else if (color === "black") {
+      return `leading-[32px] inline-flex items-center font-bold font-visby text-black`;
+    }
+    return "";
+  }, [color]);
 
-export default function TextButton({children, color="primary", onClick=()=>{}}: { children: string, color?:"primary" | "secondary"|"black", onClick?:(event: React.MouseEvent<HTMLButtonElement>)=>void }) {
-    const classname = useMemo(()=>{
-        if(color === "primary"){
-            return `px-6 pb-3 pt-4 text-lg leading-6 font-bold ${Visby.className} text-primaryWhite hover:bg-primaryPurple hover:text-primaryWhite transition-all`
-        }
-        else if(color === "secondary") {
-            return `px-6 pb-3 pt-4 text-lg leading-[32px] inline-flex items-center font-bold ${Visby.className} text-primaryOrange hover:bg-primaryOrange hover:text-primaryWhite transition-all`
-
-        }
-        else if(color === "black") {
-            return `px-6 pb-3 pt-4 text-lg leading-[32px] inline-flex items-center font-bold ${Visby.className} text-black`
-
-        }
-        return"";
-    },[color])
-
-    return <button className={classname} onClick={onClick}>{children}</button>
+  return <button className={`text-base md:text-lg ${classname}`}>{children}</button>;
 }

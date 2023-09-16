@@ -1,111 +1,90 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 import Image from "next/image";
 import AqelaLogo from "../assets/images/svg/aqela.svg";
-import Search from "../assets/images/svg/search.svg";
-import TextButton from "@/components/buttons/TextButton";
 import Link from "next/link";
-import { createTheme, Menu, MenuItem, ThemeProvider} from "@material-ui/core";
-import {Exo, Visby} from "@/assets/fonts";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { MenuIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
-const theme = createTheme({
-    palette: {
-        secondary: {
-            main: "#FFF",
-        },
-    },
-    typography: {
-        fontFamily: `${Exo.style.fontFamily}`,
-    },
-    overrides: {
-        MuiButtonBase: {
-            root: {
-                justifyContent: "flex-start",
-            },
-        },
-        MuiButton: {
-            root: {
-                textTransform: undefined,
-                padding: "12px 16px",
-            },
-            startIcon: {
-                marginRight: 8,
-            },
-            endIcon: {
-                marginLeft: 8,
-            },
-            contained: {
-                backgroundColor: "#512A9E",
-                "&:hover": {
-                    backgroundColor: "#745F9E",
-                }
-            }
-        },
-    },
-});
+export default function Header() {
+  return (
+    <header className="flex flex-row items-center justify-between bg-primary-black px-4 py-5 2xl:container md:px-20 2xl:mx-auto">
+      <Link href={"/"}>
+        <Image className="" src={AqelaLogo} alt={"aqela-logo"} />
+      </Link>
+      <div className="flex md:hidden">
+        <DropdownMenu>
+          <DropdownMenuTrigger>
+            <MenuIcon className="stroke-secondary" />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent side="bottom" align="end" className="min-w-[12rem]">
+            <DropdownMenuLabel className="mb-4 hidden text-2xl font-bold">Menu</DropdownMenuLabel>
+            <Link href="/">
+              <DropdownMenuItem>
+                <Button variant="ghost" className="px-0">
+                  Home
+                </Button>
+              </DropdownMenuItem>
+            </Link>
+            <Link href="/about">
+              <DropdownMenuItem>
+                <Button variant="ghost" className="px-0">
+                  About Us
+                </Button>
+              </DropdownMenuItem>
+            </Link>
+            <Link href="/blockchain-projects">
+              <DropdownMenuItem>
+                <Button variant="ghost" className="px-0">
+                  Blockchain Projects
+                </Button>
+              </DropdownMenuItem>
+            </Link>
+            <Link href="/contamy-nation">
+              <DropdownMenuItem>
+                <Button variant="ghost" className="px-0">
+                  Contamy Nation
+                </Button>
+              </DropdownMenuItem>
+            </Link>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
+      <div className="hidden w-1/2 flex-row items-center justify-between md:flex">
+        <Link href="/about">
+          <Button variant="ghost" className="text-xl">
+            About us
+          </Button>
+        </Link>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="ghost" className="text-xl">
+              SERVICES
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent>
+            <DropdownMenuItem className="text-xl">
+              <Link href="/blockchain-projects">Blockchain Projects</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem className="text-xl">
+              <Link href="/contamy-nation">Contamy Nation</Link>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
 
-function Header() {
-    const [anchorEl, setAnchorEl] = React.useState<null | undefined| HTMLElement>(null);
-    const open = Boolean(anchorEl);
-    const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-        setAnchorEl(event.currentTarget);
-    };
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
-
-
-    return <header
-        className="px-20 py-5 flex flex-row items-center justify-between 2xl:container 2xl:mx-auto bg-primaryBlack">
-        <Link href={"/"}><Image className="" src={AqelaLogo} alt={"aqela-logo"}/></Link>
-        <div className="flex flex-row items-center justify-between w-1/2">
-            <Link href={"/about"}> <TextButton>About us</TextButton></Link>
-            <TextButton
-                id="basic-button"
-                aria-controls={open ? 'basic-menu' : undefined}
-                aria-haspopup="true"
-                aria-expanded={open ? 'true' : undefined}
-                onClick={handleClick}
-                style={{padding: 0, fontSize: "18px", fontWeight: 700}}
-                className="px-6 pb-3 pt-4"
-            >
-                <span className={`text-primaryWhite  ${Visby.className} `}>
-                SERVICES
-                </span>
-            </TextButton>
-            <Menu
-                id="basic-menu"
-                anchorEl={anchorEl}
-                open={open}
-                onClose={handleClose}
-                MenuListProps={{
-                    'aria-labelledby': 'basic-button',
-                }}
-            >
-                <MenuItem>
-                    <Link href={"/blockchain-projects"} onClick={handleClose}>
-                        <TextButton color="black">
-                            Blockchain Projects
-                        </TextButton>
-                    </Link>
-                </MenuItem>
-                <MenuItem>
-                    <Link href={"/contamy-nation"} onClick={handleClose}>
-                        <TextButton color="black">
-                            Contamy-Nation
-                        </TextButton>
-                    </Link>
-                </MenuItem>
-            </Menu>
-            <a href={"#contact-us"}><TextButton>Contact us</TextButton></a>
-            <Image src={Search} alt={"search"}/>
-        </div>
+        <a href={"#contact-us"}>
+          <Button variant="ghost" className="text-xl">
+            Contact us
+          </Button>
+        </a>
+      </div>
     </header>
-}
-
-
-export default function HeaderWrapper() {
-    return <ThemeProvider theme={theme}>
-        <Header/>
-    </ThemeProvider>
+  );
 }

@@ -92,7 +92,9 @@ export const Visby = localFont({
             weight: "100",
             style: "italic"
         },
-    ]
+    ],
+    variable:"--font-visby"
+
 });
 export const NewAlenia = localFont({
     src:[
@@ -111,8 +113,10 @@ export const NewAlenia = localFont({
             weight:"700",
             style:"normal"
         },
-    ]
+    ],
+    variable:"--font-new-alenia"
 })
 export const Exo = localFont({
-    src:"./exo/Exo-VariableFont_wght.ttf"
+    src:"./exo/Exo-VariableFont_wght.ttf",
+    variable:"--exo"
 })
