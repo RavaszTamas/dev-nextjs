@@ -35,7 +35,7 @@ import { Exo } from "@/assets/fonts";
 
 export function ContamyNationApp() {
   return (
-    <div className="relative mt-[5%] flex w-full flex-col gap-8">
+    <div className="relative mt-12 flex w-full flex-col gap-8">
       <section className="relative flex flex-col gap-8 px-4">
         <HeroImage className="h-full max-h-none" />
         <MainTitle className="mb-8">
