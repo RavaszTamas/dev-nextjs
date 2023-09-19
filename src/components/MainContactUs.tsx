@@ -4,7 +4,7 @@ import OutlinedButton from "@/components/buttons/OutlinedButton";
 
 export default function MainContactUs() {
   return (
-    <div className="w-full bg-gardient-background-contact-us bg-[100%_100%] md:bg-cover">
+    <div className="w-full px-3 bg-gardient-background-contact-us bg-[100%_100%] md:bg-cover">
       <div className="mx-auto mb-8 mt-16 flex flex-col items-center md:w-7/12">
         <SecondaryTitle align="center" className="text-3xl md:text-6xl">
           ONE PRODUCT
