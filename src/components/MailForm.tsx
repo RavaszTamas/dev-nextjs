@@ -3,8 +3,10 @@ import React, { FormEvent, useState } from "react";
 import SecondaryTitle from "@/components/texts/SecondaryTitle";
 import "./styles/GradientBorder.css";
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 export default function MailForm() {
+  const router = useRouter()
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -63,6 +65,7 @@ export default function MailForm() {
         setEmail("");
         setMessage("");
         setFullname("");
+        router.push("/thank-you")
       }
       console.log(fullname, email, message);
       setSending(false);
