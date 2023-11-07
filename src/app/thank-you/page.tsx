@@ -1,7 +1,5 @@
 import React from "react";
-import SecondaryTitle from "@/components/texts/SecondaryTitle";
 import HeroImage from "@/components/HeroImage";
-import SubTitleText from "@/components/texts/SubTitleText";
 import MainTitle from "@/components/texts/MainTitle";
 
 export default function ThankYou() {
