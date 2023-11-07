@@ -12,10 +12,12 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { MenuIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CookieConsentModal } from "./modals";
 
 export default function Header() {
   return (
     <header className="flex flex-row items-center justify-between bg-primary-black px-4 py-5 2xl:container md:px-20 2xl:mx-auto">
+      <CookieConsentModal />
       <Link href={"/"}>
         <Image className="" src={AqelaLogo} alt={"aqela-logo"} />
       </Link>

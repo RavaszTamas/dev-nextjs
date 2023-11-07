@@ -1,0 +1,1 @@
+export const FB_PIXEL = "1060872222024072";
