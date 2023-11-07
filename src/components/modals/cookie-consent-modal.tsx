@@ -33,7 +33,7 @@ const CookieConsentModal = () => {
             variant="ghost"
             className="flex rounded-lg pt-3 leading-3 text-primary-black"
           >
-            Close
+            Do not accept
           </Button>
           <Button
             onClick={() => setIsCookieAccepted("ACCEPTED")}
