@@ -16,7 +16,6 @@ const CookieConsentModal = () => {
 
   return (
     <Dialog open={isCookieAccepted === "NOT_DECIDED"}>
-      <DialogTrigger>Open</DialogTrigger>
       <DialogContent hasClose={false} className="bg-white">
         <DialogHeader className="gap-4">
           <DialogTitle className="text-center font-new-alenia text-4xl">Cookie Policy</DialogTitle>
