@@ -42,6 +42,13 @@ export default function Header() {
                 </Button>
               </DropdownMenuItem>
             </Link>
+            <Link href="/odoo">
+              <DropdownMenuItem>
+                <Button variant="ghost" className="px-0">
+                  Odoo
+                </Button>
+              </DropdownMenuItem>
+            </Link>
             <Link href="/blockchain-projects">
               <DropdownMenuItem>
                 <Button variant="ghost" className="px-0">
@@ -72,6 +79,9 @@ export default function Header() {
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent>
+            <DropdownMenuItem className="text-xl">
+              <Link href="/odoo">Odoo</Link>
+            </DropdownMenuItem>
             <DropdownMenuItem className="text-xl">
               <Link href="/blockchain-projects">Blockchain Projects</Link>
             </DropdownMenuItem>
