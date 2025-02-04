@@ -66,15 +66,15 @@ export default function Header() {
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
-      <div className="hidden w-1/2 flex-row items-center justify-between md:flex">
+      <div className="hidden lg:w-1/2 flex-row items-center justify-between md:flex">
         <Link href="/about">
-          <Button variant="ghost" className="text-xl">
+          <Button variant="ghost" className="text-xl min-w-max">
             About us
           </Button>
         </Link>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="ghost" className="text-xl">
+            <Button variant="ghost" className="text-xl min-w-max">
               SERVICES
             </Button>
           </DropdownMenuTrigger>
@@ -92,7 +92,7 @@ export default function Header() {
         </DropdownMenu>
 
         <a href={"#contact-us"}>
-          <Button variant="ghost" className="text-xl">
+          <Button variant="ghost" className="text-xl min-w-max">
             Contact us
           </Button>
         </a>
