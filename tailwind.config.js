@@ -23,6 +23,7 @@ module.exports = {
 
       backgroundImage: {
         "contact-us": "url(/contact-us-background.png)",
+        banner: "url(/aqela-banner.png)",
         artist: "url(/artist-bg.png)",
         minting: "url(/minting-bg.png)",
         "gardient-background-contact-us": "url(/gardient-background.png)",
