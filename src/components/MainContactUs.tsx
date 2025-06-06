@@ -12,7 +12,7 @@ export default function MainContactUs() {
         <SecondaryTitle align="center" className="text-3xl md:text-6xl">
           UNLIMITED SOLUTIONS
         </SecondaryTitle>
-        <p className="text-primary mb-12 mt-6 text-center font-visby text-base md:text-xl">
+        <p className="text-primary mb-12 mt-6 text-center font-roboto text-base md:text-xl">
           Whether you need to streamline your business processes, increase efficiency, or enhance customer experience,
           our versatile product provides unlimited solutions tailored to your unique needs.
         </p>

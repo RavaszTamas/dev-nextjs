@@ -1,7 +1,7 @@
 export default function Privacy() {
   return (
     <div
-      className={`text-primary px-4 whitespace-pre-line font-visby`}
+      className={`text-primary px-4 whitespace-pre-line font-roboto`}
       dangerouslySetInnerHTML={{
         __html:
           "        PRIVACY POLICY\n" +

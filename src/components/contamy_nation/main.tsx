@@ -97,7 +97,7 @@ export function ContamyNationApp() {
           <a href={"https://www.instagram.com/_kiora_2.0_/"}>
             <Button className="cursor-pointer">
               <InstagramIcon />
-              <label className={`ml-2 cursor-pointer font-visby text-primary`}>
+              <label className={`ml-2 cursor-pointer font-roboto text-primary`}>
                 <span className="font-serif">_</span>KIORA<span className="font-serif">_</span>2.0
                 <span className="font-serif">_</span>
               </label>

@@ -10,7 +10,7 @@ module.exports = {
       fontFamily: {
         exo: ["var(--font-exo)"],
         "new-alenia": ["var(--font-new-alenia)"],
-        visby: ["var(--font-visby)"],
+        roboto: ["var(--font-roboto)"],
       },
       colors: {
         primary: "#FFFFFF",

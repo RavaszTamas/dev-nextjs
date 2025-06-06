@@ -17,7 +17,7 @@ export default function AboutUsTeaser() {
       <div className="mt-12 flex flex-row gap-3 md:gap-12">
         <SecondaryHero />
         <Image src={ArrowRight} alt={"arrow-right-large"} className="h-7 w-7 md:h-20 md:w-20" />
-        <p className="text-primary pr-12 font-visby text-base font-normal md:w-[70%] md:text-3xl md:leading-[46px]">
+        <p className="text-primary pr-12 font-roboto text-base font-normal md:w-[70%] md:text-3xl md:leading-[46px]">
           With a forward-thinking approach and a commitment to staying ahead of the curve in the rapidly evolving tech
           industry, we are dedicated to providing the best possible solutions to our clients&apos; needs.
         </p>

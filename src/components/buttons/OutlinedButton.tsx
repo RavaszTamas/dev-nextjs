@@ -20,7 +20,7 @@ export default function OutlinedButton({
       className={twMerge(
         `${
           variant === "filled" ? "bg-secondary" : "bg-transparent"
-        } text-primary px-10 py-3 font-visby text-base font-bold leading-7 md:px-14 md:py-[18px] md:text-xl ${
+        } text-primary px-10 py-3 font-roboto text-base font-bold leading-7 md:px-14 md:py-[18px] md:text-xl ${
           variant === "filled" ? "border-0" : "border-primary border-[1px]"
         }`,
         className,

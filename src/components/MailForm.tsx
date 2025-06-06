@@ -81,7 +81,7 @@ export default function MailForm() {
       </div>
       <form className="mt-8 w-full" onSubmit={handleSubmit}>
         <div className="mb-4 p-1">
-          <label className={`mb-2 block pl-1 font-visby text-lg text-primary`} htmlFor="name">
+          <label className={`mb-2 block pl-1 font-roboto text-lg text-primary`} htmlFor="name">
             Name
           </label>
           <input
@@ -96,7 +96,7 @@ export default function MailForm() {
           />
         </div>
         <div className="mb-4 p-1">
-          <label className={`mb-2 block pl-1 font-visby text-lg text-primary`} htmlFor="email">
+          <label className={`mb-2 block pl-1 font-roboto text-lg text-primary`} htmlFor="email">
             Email
           </label>
           <input
@@ -112,7 +112,7 @@ export default function MailForm() {
           />
         </div>
         <div className="mb-4 p-1">
-          <label className={`mb-2 block pl-1 font-visby text-lg text-primary`} htmlFor="message">
+          <label className={`mb-2 block pl-1 font-roboto text-lg text-primary`} htmlFor="message">
             Message
           </label>
           <textarea

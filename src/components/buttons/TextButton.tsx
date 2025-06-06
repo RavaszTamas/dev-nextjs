@@ -9,11 +9,11 @@ export default function TextButton({
 }) {
   const classname = useMemo(() => {
     if (color === "primary") {
-      return `leading-6 font-bold font-visby text-primary`;
+      return `leading-6 font-bold font-roboto text-primary`;
     } else if (color === "secondary") {
-      return `leading-[32px] inline-flex items-center font-bold font-visby text-primary-orange`;
+      return `leading-[32px] inline-flex items-center font-bold font-roboto text-primary-orange`;
     } else if (color === "black") {
-      return `leading-[32px] inline-flex items-center font-bold font-visby text-black`;
+      return `leading-[32px] inline-flex items-center font-bold font-roboto text-black`;
     }
     return "";
   }, [color]);

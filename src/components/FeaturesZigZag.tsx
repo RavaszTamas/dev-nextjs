@@ -19,7 +19,7 @@ export default function FeaturesZigZag() {
         {/* Content */}
         <div className="mx-auto max-w-xl md:col-span-7 md:w-full md:max-w-none lg:col-span-6" data-aos="fade-right">
           <div className="md:pr-4 lg:pr-12 xl:pr-16">
-            <div className="font-architects-daughter text-primary-orange mb-2 text-left font-visby text-xl font-medium md:text-right">
+            <div className="font-architects-daughter text-primary-orange mb-2 text-left font-roboto text-xl font-medium md:text-right">
               More speed. Less spend
             </div>
             <SecondaryTitle align="right" className="mb-8 text-left text-3xl md:text-right">
@@ -44,7 +44,7 @@ export default function FeaturesZigZag() {
                     fill="#F15A08"
                   />
                 </svg>
-                <span className={`font-visby`}>Clear project objectives</span>
+                <span className={`font-roboto`}>Clear project objectives</span>
               </li>
               <li className="mb-2 flex items-center gap-2 md:flex-row-reverse">
                 <svg
@@ -60,7 +60,7 @@ export default function FeaturesZigZag() {
                     fill="#F15A08"
                   />
                 </svg>
-                <span className={`font-visby`}>Strategic foresight and intentional execution</span>
+                <span className={`font-roboto`}>Strategic foresight and intentional execution</span>
               </li>
             </ul>
           </div>
@@ -77,7 +77,7 @@ export default function FeaturesZigZag() {
         {/* Content */}
         <div className="mx-auto max-w-xl md:col-span-7 md:w-full md:max-w-none lg:col-span-6" data-aos="fade-left">
           <div className="md:pl-4 lg:pl-12 xl:pl-16">
-            <div className={`font-architects-daughter text-primary-orange mb-2 font-visby text-xl font-medium`}>
+            <div className={`font-architects-daughter text-primary-orange mb-2 font-roboto text-xl font-medium`}>
               More speed. Less spend
             </div>
             <SecondaryTitle align="left" className="mb-8">
@@ -103,7 +103,7 @@ export default function FeaturesZigZag() {
                     fill="#F15A08"
                   />
                 </svg>
-                <span className={`font-visby`}>
+                <span className={`font-roboto`}>
                   React<span className="font-serif">/</span>Next.js
                 </span>
               </li>
@@ -121,7 +121,7 @@ export default function FeaturesZigZag() {
                     fill="#F15A08"
                   />
                 </svg>
-                <span className={`font-visby`}>Odoo</span>
+                <span className={`font-roboto`}>Odoo</span>
               </li>
               <li className="flex items-center">
                 <svg
@@ -137,7 +137,7 @@ export default function FeaturesZigZag() {
                     fill="#F15A08"
                   />
                 </svg>
-                <span className={`font-visby`}>Solana</span>
+                <span className={`font-roboto`}>Solana</span>
               </li>
             </ul>
           </div>
@@ -154,7 +154,7 @@ export default function FeaturesZigZag() {
         {/* Content */}
         <div className="mx-auto max-w-xl md:col-span-7 md:w-full md:max-w-none lg:col-span-6" data-aos="fade-right">
           <div className="md:pr-4 lg:pr-12 xl:pr-16">
-            <div className="font-architects-daughter text-primary-orange mb-2 font-visby text-xl font-medium md:text-right">
+            <div className="font-architects-daughter text-primary-orange mb-2 font-roboto text-xl font-medium md:text-right">
               More speed. Less spend
             </div>
             <SecondaryTitle align="right" className="mb-8 text-left md:text-right">

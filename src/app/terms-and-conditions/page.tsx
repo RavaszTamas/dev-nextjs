@@ -2,7 +2,7 @@ import SecondaryTitle from "@/components/texts/SecondaryTitle";
 
 export default function ToS() {
   return (
-    <div className={`text-primary mb-12 flex flex-col gap-8 font-visby`}>
+    <div className={`text-primary mb-12 flex flex-col gap-8 font-roboto`}>
       <SecondaryTitle>Terms and conditions</SecondaryTitle>
       These terms and conditions (“Agreement”) set forth the general terms and conditions of your use of the aqela.org
       website (“Website” or “Service”) and any of its related products and services (collectively, “Services”). This

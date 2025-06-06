@@ -379,7 +379,7 @@ const MintZoneContent = (props: MintZoneContentProps) => {
                     {candyMachineV3.items.remaining !== 0 && !candyMachineV3.status.minting && limit > 0 && (
                       <Grid item xs={false} container justifyContent={"center"}>
                         <div className="hidden w-full justify-center md:flex">
-                          <Typography align={"center"} className={`font-visby text-primary`} style={{ fontSize: 22 }}>
+                          <Typography align={"center"} className={`font-roboto text-primary`} style={{ fontSize: 22 }}>
                             Quantity (estimated total price: {totalSolCost} SOL):
                           </Typography>
                         </div>

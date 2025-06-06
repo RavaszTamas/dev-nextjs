@@ -18,7 +18,7 @@ const CookieConsentModal = () => {
       <DialogContent hasClose={false} className="bg-white">
         <DialogHeader className="gap-4">
           <DialogTitle className="text-center font-new-alenia text-4xl">Cookie Policy</DialogTitle>
-          <DialogDescription className="font-visby font-bold text-xl">
+          <DialogDescription className="font-roboto font-bold text-xl">
             We employ cookies and comparable technologies to enhance content personalization and deliver an improved
             user experience. By selecting &quot;accept,&quot; you are consenting to this practice, as detailed in our Cookie
             Policy.

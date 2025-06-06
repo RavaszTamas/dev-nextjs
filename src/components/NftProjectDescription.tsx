@@ -12,7 +12,7 @@ export default function NftProjectDescription() {
         <SecondaryTitle align="left">
           <span className="text-2xl md:text-9xl"> NFT </span> <br /> project
         </SecondaryTitle>
-        <p className="text-primary w-full font-visby text-base md:w-11/12 md:text-xl">
+        <p className="text-primary w-full font-roboto text-base md:w-11/12 md:text-xl">
           Explore the Contamy<span className="font-serif">-</span>Nation: an NFT collection on the Solana blockchain
           showcasing the mutated marine life surviving in our polluted oceans. Join our growing community committed to
           raising awareness about ocean pollution and contributing to a cleaner environment. By owning a Contamy
